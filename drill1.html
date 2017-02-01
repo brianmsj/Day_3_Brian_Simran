@@ -29,5 +29,13 @@ function personMaker() {
     };
     return person;
   }
+function keyDeleter(obj) {
+  return delete obj.foo && obj.bar;
+}
 
-</script>
+var sampleObj = {
+  foo: 'foo',
+  bar: 'bar',
+  bizz: 'bizz',
+  bang: 'bang'
+}
